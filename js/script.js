@@ -3,10 +3,9 @@
 
     var showModal = function (event) {
         event.preventDefault();
-        document.querySelector('#modal-overlay').classList.add('show');
-
+        
         for (var i = 0; i < modals.length; i++) {
-            modals[i].classList.remove('show')
+            modals[i].classList.remove('show');
         }
 
         document.querySelector(this.hash).classList.add('show');
